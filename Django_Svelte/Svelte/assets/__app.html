@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<meta name="theme-color" content="#E938C2">
+	<link rel="apple-touch-icon" href="images/touch-icons/logo-192.png">
+
+	<link rel="manifest" href="/manifest.json">
+	<link rel='icon' type='image/png' href="/favicon.png">
+	<link rel='stylesheet' href="/build/bundle.css">
+	<link rel="modulepreload" href="/build/main.js" />
+
+	<script type="module" src="/build/main.js"></script>
+
+	<link rel="apple-touch-icon" href="{% static 'images/touch-icons/logo-192.png' %}">
+
+	<link rel="manifest" href="{% static '/manifest.json' %}">
+	<link rel='icon' type='image/png' href="{% static '/favicon.png' %}">
+	<link rel='stylesheet' href="{% static '/build/bundle.css' %}">
+	<link rel="modulepreload" href="{% static '/build/main.js/' %}">
+
+	<script type="module" src="{% static '/build/main.js' %}"></script>
+</head>
+
+<body>
+	<noscript>Please enable Javascript for best experience.</noscript>
+</body>
+</html>
